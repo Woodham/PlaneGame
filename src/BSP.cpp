@@ -122,6 +122,7 @@ void BSP::Draw()
 	    {
 	      unsigned short leaf_face;
 	      bsp_face face;
+	      bsp_texinfo tex;
 
 	  //    cout << leaf.first_leaf_face << endl;
 
@@ -130,6 +131,10 @@ void BSP::Draw()
 
 	      /* Use the index to get the face from the face table */
 	      face = this->faces[leaf_face];
+
+	      tex = this->texinfo[face.texture_info];
+
+
 
 	      //cout << leaf_face << endl;
 
